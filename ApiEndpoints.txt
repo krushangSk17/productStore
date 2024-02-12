@@ -1,0 +1,75 @@
+GET view product and Category Request:
+http://127.0.0.1:8000/api/get-products/?Authorization=Token 684b207b0257d73747bcfd0e58ca09fa05ff4aec
+
+----------------------------------------------------------------------------
+POST add product request:  (With Authentication - Token Required in the Header)
+http://127.0.0.1:8000/api/save-product/
+
+Json:
+{
+    "sku":"ABC",
+    "name": "abc product",
+    "category": "cat2",
+    "tags": ["a","b","c"],
+    "stock_status": 100,
+    "available_stock": 50
+}
+
+----------------------------------------------------------------------------
+
+POST add Category Request:  (With Authentication - Token Required in the Header)
+http://127.0.0.1:8000/api/save-category/
+
+{
+    "name": "cat2"
+}
+
+----------------------------------------------------------------------------
+
+POST get authorization token request:  (With Authentication - Token Required in the Header)
+
+http://127.0.0.1:8000/api/api-token-auth/
+
+{
+    "username": "krushang",
+    "password": "krushangsatani"
+}
+
+----------------------------------------------------------------------------
+
+POST New User Creation Request (without security)
+
+http://127.0.0.1:8000/api/register/
+
+{
+    "username": "un1",
+    "password": "un1",
+    "email": "un1@g.com"
+}
+
+-----------------------------------------------------------------------------
+Forget Password (Without security)
+
+http://127.0.0.1:8000/api/change-password/
+
+{
+    "username": "the_username",
+    "newpassword": "the_new_password"
+}
+
+--------------------------------------------------------------------------------
+Delete Product ()
+
+{
+    "id":"1"
+}
+
+--------------------------------------------------------------------------------
+
+http://127.0.0.1:8000/api/get-products/?start_date=2022-01-01T00:00:00&Authorization=Token 684b207b0257d73747bcfd0e58ca09fa05ff4aec&end_date=2025-01-31T23:59:59
+
+
+start_date=2022-01-01T00:00:00 - A parameter to filter products that were created on or after January 1, 2022.
+end_date=2025-01-31T23:59:59 - A parameter to filter products that were created on or before January 31, 2025.
+
+---------------------------------------------------------------------------------
