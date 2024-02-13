@@ -73,7 +73,7 @@ Authorization: Token <your_token_here>
 
 ### Product Management
 
-#### Get Products
+#### Get Products and Category
 
 - **GET** `/get-products/`
 
@@ -90,6 +90,27 @@ Authorization: Token <your_token_here>
   ```
   /get-products/?start_date=2022-01-01T00:00:00&end_date=2025-01-31T23:59:59
   ```
+
+### Category Management
+
+#### Add Category
+
+- **POST** `/save-category/`
+
+  **Headers:**
+  ```
+  Authorization: Token <your_token_here>
+  ```
+
+  **Body:**
+  ```json
+  {
+    "name": "cat2"
+  }
+  ```
+
+  **Description:** Adds a new category to the system. Requires authentication.
+
 
 #### Add Product
 
@@ -113,26 +134,6 @@ Authorization: Token <your_token_here>
   ```
 
   **Description:** Adds a new product to the system. Requires authentication.
-
-### Category Management
-
-#### Add Category
-
-- **POST** `/save-category/`
-
-  **Headers:**
-  ```
-  Authorization: Token <your_token_here>
-  ```
-
-  **Body:**
-  ```json
-  {
-    "name": "cat2"
-  }
-  ```
-
-  **Description:** Adds a new category to the system. Requires authentication.
 
 ### Delete Product
 
