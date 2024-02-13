@@ -1,9 +1,9 @@
 GET view product and Category Request:
-http://127.0.0.1:8000/api/get-products/?Authorization=Token 684b207b0257d73747bcfd0e58ca09fa05ff4aec
+https://krushang17.pythonanywhere.com/api/get-products/?Authorization=Token 684b207b0257d73747bcfd0e58ca09fa05ff4aec
 
 ----------------------------------------------------------------------------
 POST add product request:  (With Authentication - Token Required in the Header)
-http://127.0.0.1:8000/api/save-product/
+https://krushang17.pythonanywhere.com/api/save-product/
 
 Json:
 {
@@ -18,7 +18,7 @@ Json:
 ----------------------------------------------------------------------------
 
 POST add Category Request:  (With Authentication - Token Required in the Header)
-http://127.0.0.1:8000/api/save-category/
+https://krushang17.pythonanywhere.com/api/save-category/
 
 {
     "name": "cat2"
@@ -28,7 +28,7 @@ http://127.0.0.1:8000/api/save-category/
 
 POST get authorization token request:  (With Authentication - Token Required in the Header)
 
-http://127.0.0.1:8000/api/api-token-auth/
+https://krushang17.pythonanywhere.com/api/api-token-auth/
 
 {
     "username": "krushang",
@@ -39,7 +39,7 @@ http://127.0.0.1:8000/api/api-token-auth/
 
 POST New User Creation Request (without security)
 
-http://127.0.0.1:8000/api/register/
+https://krushang17.pythonanywhere.com/api/register/
 
 {
     "username": "un1",
@@ -50,7 +50,7 @@ http://127.0.0.1:8000/api/register/
 -----------------------------------------------------------------------------
 Forget Password (Without security)
 
-http://127.0.0.1:8000/api/change-password/
+https://krushang17.pythonanywhere.com/api/change-password/
 
 {
     "username": "the_username",
@@ -66,7 +66,7 @@ Delete Product ()
 
 --------------------------------------------------------------------------------
 
-http://127.0.0.1:8000/api/get-products/?start_date=2022-01-01T00:00:00&Authorization=Token 684b207b0257d73747bcfd0e58ca09fa05ff4aec&end_date=2025-01-31T23:59:59
+https://krushang17.pythonanywhere.com/api/get-products/?start_date=2022-01-01T00:00:00&Authorization=Token 684b207b0257d73747bcfd0e58ca09fa05ff4aec&end_date=2025-01-31T23:59:59
 
 
 start_date=2022-01-01T00:00:00 - A parameter to filter products that were created on or after January 1, 2022.
