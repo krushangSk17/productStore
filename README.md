@@ -21,7 +21,7 @@ Authorization: Token <your_token_here>
 
 ### Obtaining a Token
 
-- **POST** `/api-token-auth/`
+- **POST** `https://krushang17.pythonanywhere.com/api/api-token-auth/`
 
   **Body:**
   ```json
@@ -44,7 +44,7 @@ Authorization: Token <your_token_here>
 
 #### New User Registration
 
-- **POST** `/register/`
+- **POST** `https://krushang17.pythonanywhere.com/api/register/`
 
   **Body:**
   ```json
@@ -59,7 +59,7 @@ Authorization: Token <your_token_here>
 
 #### Change Password
 
-- **POST** `/change-password/`
+- **POST** `https://krushang17.pythonanywhere.com/api/change-password/`
 
   **Body:**
   ```json
@@ -75,7 +75,7 @@ Authorization: Token <your_token_here>
 
 #### Get Products and Category
 
-- **GET** `/get-products/`
+- **GET** `https://krushang17.pythonanywhere.com/api/get-products/`
 
   **Headers:**
   ```
@@ -95,7 +95,7 @@ Authorization: Token <your_token_here>
 
 #### Add Category
 
-- **POST** `/save-category/`
+- **POST** `https://krushang17.pythonanywhere.com/api/save-category/`
 
   **Headers:**
   ```
@@ -114,7 +114,7 @@ Authorization: Token <your_token_here>
 
 #### Add Product
 
-- **POST** `/save-product/`
+- **POST** `https://krushang17.pythonanywhere.com/api/save-product/`
 
   **Headers:**
   ```
@@ -137,7 +137,7 @@ Authorization: Token <your_token_here>
 
 ### Delete Product
 
-- **POST** (Endpoint not specified in the request. Assuming `/delete-product/`)
+- **POST** (`https://krushang17.pythonanywhere.com/api/delete-product/`)
 
   **Body:**
   ```json
